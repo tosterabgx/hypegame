@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hypegame"
+dynamic = ["version"]
+description = "Pygame based library for maximum productivity"
+authors = [
+  { name="Arsenii Misiurenko", email="misiurenko.arsenii@gmail.com" },
+  { name="Mikhail Mezhibovskiy", email="mikhail.mezh@icloud.com" },
+]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "pygame"
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/tosterabgx/hypegame"
+Issues = "https://github.com/tosterabgx/hypegame/issues"
+
+[tool.setuptools.dynamic]
+version = {attr = "hypegame.__version__"}
